@@ -1,0 +1,18 @@
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 25px 0;
+
+    p {
+        font-family: $font;
+        color: $color-text;
+        transition: color 500ms linear;
+        &.night {
+            color: $color;
+            transition: color 500ms linear;
+        }
+    }
+}

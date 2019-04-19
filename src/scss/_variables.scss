@@ -1,5 +1,7 @@
 // Variables de wrapper
-$wrapperDesktop: 85vw;
+$wrapperDesktop: 95vw;
+$tablet: 1150px;
+$mobile: 480px;
 
 // Variables de mediaqueries
 $laptop: 1350px;
@@ -7,9 +9,18 @@ $tablet: 1080px;
 $mobile: 480px;
 
 // Variables de fontes
+$font: 'Helvetica',
+sans-serif;
+$font-medium: 'Helvetica-Med',
+sans-serif;
+$font-bold: 'Helvetica-Bold',
+sans-serif;
+$font-Roman: 'Helvetica-Roman', sans-serif;
 
 // Variables de couleurs
+$color: rgb(240, 223, 209);
+$color-text: rgb(36, 32, 31);
 
 // Variables cubic-bezier
-$curve: cubic-bezier(.7,0,.3,1);
-$curve2: cubic-bezier(.82,.01,.2,.99);
+$curve: cubic-bezier(.7, 0, .3, 1);
+$curve2: cubic-bezier(.82, .01, .2, .99);

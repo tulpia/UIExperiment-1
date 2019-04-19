@@ -1,35 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack: autoévaluation</title>
-    <link rel="stylesheet" href="dist/styles.css">
-</head>
-<body>
-    <main class="wrapper">
-        <h1>Webpack du groupe d'auto-eval</h1>
-        <h3>Instructions</h3>
-        <ul>
-            <li><p><strong>npm run watch</strong> permet de compiler le code en sauvegardant grâce au <a href="https://webpack.js.org/concepts/hot-module-replacement/">Hot Module Replacement</a></p></li>
-            <li><p><strong>npm run dev</strong> compile le code sans minifier</p></li>
-            <li>
-                <p><strong>npm run build</strong> compile le code en le minifiant, pour une prochaine mise en ligne</p>
-            </li>
-            <li>
-                <p><strong>npm install nomdevotrepackage --save-dev</strong> permet d'installer un module et de le sauvegarder en tant dépendance de développeur <br>Le module ne sera donc pas inclus dans le code final (quand vous allez faire npm run build)</p>
-            </li>
-            <li>
-                <p><strong>npm install nomdevotrepackage --save </strong>permet d'inclure un module dans le code final, c'est très utile pour des modules comme jquery, axios, gsap, etc...</p>
-            </li>
-            <li>
-                <p><strong>npm run lint</strong> permet de "linter" le code, c'est à dire de le laver, en quelques sortes. <br>
-                Le linter inclu suit les styles guides de <a href="https://github.com/airbnb/javascript">Airbnb</a></p>
-            </li>
-        </ul>
-
-    </main>
-    <script src="dist/main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <title>UI Experiment: Milwaukee</title>
+        <link rel="icon" href="dist/images/favicon.png">
+        <link href="dist/styles.css" rel="stylesheet">
+        <meta name="robots" content="noindex,follow"/>
+    </head>
+    <body class="toggle-class">
+        <nav class="menu-container toggle-class">
+            <section class="menu-container__logo">
+                <p class="logo__text toggle-class">UI Experiment #1</p>
+            </section>
+            <section class="menu-container__btn-menu">
+                <p class="btn-menu__text toggle-class">Menu</p>
+            </section>
+            <div class="menu-container__content">
+                <div class="content__explanation-container">
+                    <div class="explanation-container__title">
+                        <p class="toggle-class">What is this ?</p>
+                    </div>
+                    <div class="explanation-container__text toggle-class">
+                        <p>UI Experiments is a challenge that I decided to take in order to better my skills in creative development. The point of the challenge is to put out a site that is beatiful in it's appearence, animations and interactions. The websites' will be dedicated to the showcase of various cities around the world. The websites are designed and developped by me, with tools that will vary from projects to projects.</p>
+                    </div>
+                </div>
+                <div class="what-i-used">
+                    <div class="tech-used">
+                        <div class="title-container">
+                            <p class="title toggle-class">development</p>
+                        </div>
+                        <ul class="list">
+                            <li class="tech-list toggle-class">webpack 4</li>
+                            <li class="tech-list toggle-class">Smooth Scroll by Baptiste Briel</li>
+                            <li class="tech-list toggle-class">ScrollMonitor</li>
+                            <li class="tech-list toggle-class">GSAP</li>
+                        </ul>
+                        <p class="inspiration tech-list toggle-class">Inspired by Aristide Benoist & Vincent Camerano.</p>
+                    </div>
+                    <div class="graphism-used">
+                        <div class="title-container">
+                            <p class="title toggle-class">graphism</p>
+                        </div>
+                        <ul class="list">
+                            <p class="list-title tech-list toggle-class">colors used :</p>
+                            <li class="tech-list toggle-class">soft beige (#f0dfd1)</li>
+                            <li class="tech-list toggle-class">almost black (#24201f)</li>
+                        </ul>
+                        <ul class="list">
+                            <p class="list-title tech-list toggle-class">Fonts used :</p>
+                            <li class="tech-list toggle-class">Helvetica Neue</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="wrapper vs-section">
+            <section class="content">
+                <section class="block-home">
+                    <div class="title-container">
+                        <p class="block-home__intro toggle-class">Milwaukee</p>
+                    </div>
+                    <div class="title-container">
+                        <p class="block-home__intro-sub toggle-class">USA - 43.038/-87.907</p>
+                    </div>
+                    <div class="block-home__img-container">
+                        <img src="dist/images/image4.jpg" alt="home">
+                    </div>
+                </section>
+                <section class="block-introduction">
+                    <div class="block-introduction__text-container text-1">
+                        <p class="toggle-class">Milwaukee (en anglais [mɪlˈwɔːkiː]) est la plus grande ville de l'État du Wisconsin et la 25e ville des États-Unis de par sa population. La ville est le siège du comté de Milwaukee, dans le sud-est du Wisconsin, sur la rive du lac Michigan. Elle est située à environ 150 km au nord de Chicago. En 2011, selon le Bureau du recensement des États-Unis, sa population était de 597 867 personnes dans une agglomération de 2 025 898 habitants.</p>
+                    </div>
+                    <div class="block-introduction__text-container text-2">
+                        <p class="toggle-class">Les premiers Européens à traverser cette région étaient des missionnaires français et des vendeurs de fourrures. En 1818, le Canadien-Français Salomon Juneau s'établit près de l'emplacement actuel de la ville, et en 1846 la ville de Juneau fut combinée à deux autres villes voisines pour incorporer la ville de Milwaukee. Un grand nombre d'Allemands et d'autres immigrants contribuèrent à augmenter la population de la ville durant les années 1840 et les décennies suivantes.</p>
+                    </div>
+                </section>
+                <section class="block-images">
+                    <article class="block-images__img img1">
+                        <div class="img-hider"></div>
+                        <img src="dist/images/image1.jpg" alt="">
+                    </article>
+                    <article class="block-images__img img2">
+                        <img src="dist/images/image2.jpg" alt="">
+                    </article>
+                    <article class="block-images__img img3">
+                        <img src="dist/images/image5.jpg" alt="">
+                    </article>
+                    <article class="block-images__img img4">
+                        <img src="dist/images/image3.jpg" alt="">
+                    </article>
+                </section>
+            </section>
+            <footer>
+                <section class="credit-container">
+                    <p class="toggle-class">© 2019</p>
+                </section>
+                <section class="credit-container">
+                    <p class="toggle-class">by Alec.</p>
+                </section>
+        </main>
+        <script src="dist/main.js"></script>
+    </body>
 </html>

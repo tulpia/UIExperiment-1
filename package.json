@@ -39,8 +39,10 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "bootstrap": "^4.2.1",
+    "gsap": "^2.1.2",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.7"
+    "popper.js": "^1.14.7",
+    "scrollmonitor": "^1.2.4",
+    "smooth-scrolling": "^2.3.11"
   }
 }
